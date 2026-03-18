@@ -35,18 +35,38 @@
 }
 
 .like-widget {
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
+}
+
+.like-widget button {
+    font-size: 10px;
 }
 
 .main-navbar {
     background-color: rgba(227,236,255,0.96);
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid gray;
 }
 
 .container-xxl {
     max-width: 1900px;
     padding-left: 40px;
     padding-right: 40px;
+}
 
+.question-avatar {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }

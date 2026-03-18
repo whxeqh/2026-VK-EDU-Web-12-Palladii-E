@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskPupkin New Question</title>
+    <link rel="icon" href="static/img/favicon.png">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-xxl">
+            <a class="navbar-brand fw-bold fs-1" href="index.html">AskPupkin</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="d-flex align-items-center w-100 gap-3">
+
+                    <!-- поиск -->
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="border-dark form-control search-input"
+                               type="search"
+                               placeholder="Search">
+                    </form>
+
+                    <!-- кнопка -->
+                    <a href="ask.html" class="btn btn-success button fw-bold">ASK!</a>
+
+                    <!-- профиль справа -->
+                    <div class="d-flex align-items-center me-4">
+                        <div class="ms-3">
+                            <div>
+                                <a href="login.html" class="me-2">login</a>
+                                <a href="signup.html" >register</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="main-container mt-5">
+    <div class="container-xxl">
+        <div class="row">
+
+            <div class="col-12 col-lg-9">
+                <h2 class="mb-3">Registration</h2>
+
+                <div class="text-danger mb-3">Sorry, this email address already registered!</div>
+
+                <div class="d-flex flex-column gap-3" style="max-width: 450px;">
+
+                    <div class="d-flex align-items-center gap-3">
+                        <label style="min-width: 150px;">Login</label>
+                        <div class="flex-grow-1">
+                            <input type="text" class="form-control border-dark" value="dr_pepper">
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                        <label class="pt-2" style="min-width: 150px;">Email</label>
+                        <div class="flex-grow-1">
+                            <input type="email" class="form-control is-invalid "
+                                   value="dr.pepper@mail.ru">
+                            <div class="invalid-feedback ">Invalid email address</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <label style="min-width: 150px;">NickName</label>
+                        <div class="flex-grow-1">
+                            <input type="text" class="form-control border-dark" value="Dr. Pepper">
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <label style="min-width: 150px;">Password</label>
+                        <div class="flex-grow-1">
+                            <input type="password" class="form-control border-dark" placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <label style="min-width: 150px;">Repeat password</label>
+                        <div class="flex-grow-1">
+                            <input type="password" class="form-control border-dark" placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <label style="min-width: 150px;">Upload avatar</label>
+                        <div class="flex-grow-1">
+                            <input type="file" class="form-control border-dark" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div style="margin-left: 163px;">
+                        <button class="button btn btn-secondary">Register!</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- sidebar -->
+            <div class="col-12 col-lg-3 justify-content-center">
+                <h5 class="fw-bold">Popular Tags</h5>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <a href="#" class="text-dark text-decoration-none">perl</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">python</a>
+                    <a href="#" class="text-dark text-decoration-none">TechnoPark</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">MySQL</a>
+                    <a href="#" class="text-success text-decoration-none">django</a>
+                    <a href="#" class="text-dark text-decoration-none">C++</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">C#</a>
+                    <a href="#" class="text-dark text-decoration-none">F#</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">NASM</a>
+                    <a href="#" class="text-success text-decoration-none">Rust</a>
+
+                </div>
+
+                <h5 class="fw-bold">Best Members</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a href="#" class="text-primary">Поздышев Александр</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Опритов Артём</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Виндман Александр</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Пивоварова Саша</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Клименков Артём</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="border-top py-3 text-center text-muted small mt-auto">
+    2026 AskPupkin
+</footer>
+
+<script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
