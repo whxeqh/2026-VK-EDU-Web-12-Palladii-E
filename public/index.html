@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskPupkin</title>
+    <link rel="icon" href="static/img/favicon.png">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-xxl">
+
+            <a class="navbar-brand fw-bold fs-1" href="index.html">AskPupkin</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="d-flex align-items-center w-100 gap-3">
+
+                    <!-- поиск -->
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="border-dark form-control search-input"
+                               type="search"
+                               placeholder="Search">
+                    </form>
+
+                    <!-- кнопка -->
+                    <a href="ask.html" class="btn btn-success button fw-bold">ASK!</a>
+
+                    <!-- профиль справа -->
+                    <div class="d-flex align-items-center me-4">
+                        <img src="static/img/avatar.png" class="avatar" alt="avatar">
+                        <div class="ms-3">
+                            <div class="fw-semibold">Данил Колбасенко</div>
+                            <div>
+                                <a href="profile.html" class="me-2">settings</a>
+                                <a href="#">log out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main class="main-container mt-5">
+    <div class="container-xxl">
+        <div class="row">
+
+            <!-- основной раздел -->
+            <div class="col-12 col-lg-9">
+                <div class="d-flex align-items-center mb-3">
+                    <h1>New Questions</h1>
+                    <a href="#" class="ms-4">Hot Questions</a>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+
+                    <!-- карточка 1 -->
+                    <div class="card mt-3 p-3 border-dark">
+                        <div class="d-flex gap-3">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="static/img/card-img.jpg" class="card-img" alt="card image">
+                                <div class="d-flex align-items-center border rounded like-widget ">
+                                    <span class="fw-semibold px-3">5</span>
+                                    <div class="vr"></div>
+                                    <div class="d-flex flex-column flex-grow-1 ">
+                                        <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                                        <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <a href="question.html" class="fw-semibold fs-5">How to build a moon park?</a>
+                                <p class="text-muted mb-1">Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack...</p>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <a href="#" class="text-primary small">answer (3)</a>
+                                        <div class="d-flex gap-2">
+                                            <span class="small">Tags:</span>
+                                            <a href="#" class="small">black-jack</a>
+                                            <a href="#" class="small">bender</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <span class="small">Published:</span>
+                                        <span class="text-muted small">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- карточка 2 -->
+                    <div class="card mt-3 p-3 border-dark">
+                        <div class="d-flex gap-3">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="static/img/card-img.jpg" class="card-img" alt="card image">
+                                <div class="d-flex align-items-center border rounded like-widget">
+                                    <span class="fw-semibold px-3">5</span>
+                                    <div class="vr"></div>
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                                        <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-1 border-dark">
+                                <a href="question.html" class="fw-semibold fs-5">How to build a moon park?</a>
+                                <p class="text-muted mb-1">Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack...</p>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <a href="#" class="text-primary small">answer (3)</a>
+                                        <div class="d-flex gap-2">
+                                            <span class="small">Tags:</span>
+                                            <a href="#" class="small">black-jack</a>
+                                            <a href="#" class="small">bender</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <span class="small">Published:</span>
+                                        <span class="text-muted small">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- карточка 3  -->
+                    <div class="card mt-3 p-3 border-dark">
+                        <div class="d-flex gap-3">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="static/img/card-img.jpg" class="card-img" alt="card image">
+                                <div class="d-flex align-items-center border rounded like-widget">
+                                    <span class="fw-semibold px-3">5</span>
+                                    <div class="vr"></div>
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                                        <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <a href="question.html" class="fw-semibold fs-5">How to build a moon park?</a>
+                                <p class="text-muted mb-1">Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack... Guys, i have trouble with a moon park. Can't find the
+                                    black-jack...</p>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <a href="#" class="text-primary small">answer (3)</a>
+                                        <div class="d-flex gap-2">
+                                            <span class="small">Tags:</span>
+                                            <a href="#" class="small">black-jack</a>
+                                            <a href="#" class="small">bender</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <span class="small">Published:</span>
+                                        <span class="text-muted small">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sidebar -->
+            <div class="col-12 col-lg-3 justify-content-center">
+                <h5 class="fw-bold">Popular Tags</h5>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <a href="#" class="text-dark text-decoration-none">perl</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">python</a>
+                    <a href="#" class="text-dark text-decoration-none">TechnoPark</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">MySQL</a>
+                    <a href="#" class="text-success text-decoration-none">django</a>
+                    <a href="#" class="text-dark text-decoration-none">C++</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">C#</a>
+                    <a href="#" class="text-dark text-decoration-none">F#</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">NASM</a>
+                    <a href="#" class="text-success text-decoration-none">Rust</a>
+
+                </div>
+
+                <h5 class="fw-bold">Best Members</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a href="#" class="text-primary">Поздышев Александр</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Опритов Артём</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Виндман Александр</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Пивоварова Саша</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Клименков Артём</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav aria-label="..." class="col-12 col-lg-9 mt-3 ">
+            <ul class="pagination">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</main>
+
+<footer class="border-top py-3 text-center text-muted small mt-auto">
+    2026 AskPupkin
+</footer>
+
+<script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
