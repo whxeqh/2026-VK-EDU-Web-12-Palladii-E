@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}AskPupkin — {{ question.title }}{% endblock %}
+
+{% block content %}
+
+<!-- блок вопроса -->
+<div class="d-flex gap-3 mb-4">
+    <div class="d-flex flex-column align-items-center gap-2">
+        <img src="{% static 'img/card-img.jpg' %}" class="question-avatar" alt="avatar">
+        <div class="d-flex align-items-center border rounded like-widget">
+            <span class="fw-semibold px-3">{{ question.likes }}</span>
+            <div class="vr"></div>
+            <div class="d-flex flex-column flex-grow-1">
+                <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>{{ question.title }}</h2>
+        <p class="text-muted">{{ question.text }}</p>
+        <div class="d-flex flex-column gap-2">
+            <div class="d-flex flex-row gap-2">
+                <span class="small">Tags:</span>
+                {% for tag in question.tags %}
+                <a href="{% url 'tag' tag %}" class="small">{{ tag }}</a>
+                {% endfor %}
+            </div>
+            <div class="d-flex flex-row gap-2">
+                <span class="small">Published:</span>
+                <span class="text-muted small">{{ question.created_at }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- список ответов -->
+<div class="d-flex flex-column gap-3 mb-4">
+    {% for answer in page_obj %}
+    <div class="card p-3 border-dark">
+        <div class="d-flex gap-3">
+            <div class="d-flex flex-column align-items-center gap-2">
+                <img src="{% static 'img/card-img.jpg' %}" class="card-img" alt="avatar">
+                <div class="d-flex align-items-center border rounded like-widget">
+                    <span class="fw-semibold px-3">{{ answer.likes }}</span>
+                    <div class="vr"></div>
+                    <div class="d-flex flex-column flex-grow-1">
+                        <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                        <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>{{ answer.text }}</p>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex align-items-center gap-2 {% if answer.is_correct %}text-success{% endif %}">
+                        <input type="checkbox" {% if answer.is_correct %}checked{% endif %}>
+                        <span class="fw-semibold">Correct!</span>
+                    </div>
+                    <div class="d-flex flex-row gap-2">
+                        <span class="small">Published:</span>
+                        <span class="text-muted small">{{ answer.created_at }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% include "pagination.html" %}
+
+<hr>
+
+<!-- форма ответа -->
+<div>
+    <textarea class="form-control mb-3 border-dark" rows="4" placeholder="Enter your answer here.."></textarea>
+    <button class="btn btn-secondary button mb-5">Answer</button>
+</div>
+
+{% endblock %}

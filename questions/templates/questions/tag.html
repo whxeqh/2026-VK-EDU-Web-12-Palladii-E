@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}AskPupkin — Tag: {{ tag }}{% endblock %}
+
+{% block content %}
+
+<div class="d-flex align-items-center mb-3">
+    <h1>Tag: {{ tag }}</h1>
+</div>
+
+<div class="d-flex flex-column gap-2">
+    {% for question in page_obj %}
+    {% include "questions/question_card.html" %}
+    {% endfor %}
+</div>
+
+{% include "pagination.html" %}
+
+{% endblock %}
