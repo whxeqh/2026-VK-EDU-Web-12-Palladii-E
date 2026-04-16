@@ -111,14 +111,12 @@ def tag(request, tag_name):
 def question(request, question_id):
     all_questions = make_fake_questions(30)
 
-    # ищем вопрос по id
     found_question = None
     for q in all_questions:
         if q['id'] == question_id:
             found_question = q
             break
 
-    # если не нашли — берём первый
     if found_question is None:
         found_question = all_questions[0]
 
