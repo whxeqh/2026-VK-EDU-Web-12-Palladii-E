@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}AskPupkin{% endblock %}</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-xxl">
+            <a class="navbar-brand fw-bold fs-1" href="{% url 'index' %}">AskPupkin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="d-flex align-items-center w-100 gap-3">
+
+                    <!-- поиск -->
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="border-dark form-control search-input" type="search" placeholder="Search">
+                    </form>
+
+                    <!-- кнопка -->
+                    <a href="{% url 'ask' %}" class="btn btn-success button fw-bold">ASK!</a>
+
+                    <!-- авторизованный аккаунт -->
+                    <div class="d-flex align-items-center me-4">
+                        <img src="{% static 'img/avatar.png' %}" class="avatar" alt="avatar">
+                        <div class="ms-3">
+                            <div class="fw-semibold">Данил Колбасенко</div>
+                            <div>
+                                <a href="{% url 'profile' %}" class="me-2">settings</a>
+                                <a href="{% url 'logout' %}">log out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- не авторизованный аккаунт -->
+                    <!--
+                    <div class="d-flex gap-2 ms-auto">
+                        <a href="{% url 'login' %}" class="ms-2">log in</a>
+                        <a href="{% url 'signup' %}">register</a>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="main-container mt-5">
+    <div class="container-xxl">
+        <div class="row">
+
+            <!-- основной контент -->
+            <div class="col-12 col-lg-9">
+                {% block content %}{% endblock %}
+            </div>
+
+            <!-- sidebar -->
+            <div class="col-12 col-lg-3">
+                {% include "sidebar.html" %}
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="border-top py-3 text-center text-muted small mt-auto">
+    2026 AskPupkin
+</footer>
+
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

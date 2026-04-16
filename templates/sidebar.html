@@ -1,0 +1,13 @@
+<h5 class="fw-bold">Popular Tags</h5>
+<div class="d-flex flex-wrap gap-2 mb-4">
+    {% for tag in popular_tags %}
+    <a href="{% url 'tag' tag %}" class="text-dark text-decoration-none">{{ tag }}</a>
+    {% endfor %}
+</div>
+
+<h5 class="fw-bold">Best Members</h5>
+<ul class="list-unstyled">
+    {% for member in best_members %}
+    <li class="mb-1"><a href="#" class="text-primary">{{ member }}</a></li>
+    {% endfor %}
+</ul>

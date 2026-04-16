@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}AskPupkin — New Question{% endblock %}
+
+{% block content %}
+
+<div class="d-flex align-items-center mb-3">
+    <h1>New Question</h1>
+</div>
+
+<div class="d-flex flex-column gap-3" style="max-width: 600px;">
+
+    <div class="d-flex align-items-start gap-3">
+        <label class="pt-2" style="min-width: 60px;">Title</label>
+        <div class="flex-grow-1">
+            <input type="text" class="form-control" placeholder="How to build a moon park?" maxlength="255">
+            <div class="form-text">Max 255 characters</div>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-start gap-3">
+        <label class="pt-2" style="min-width: 60px;">Text</label>
+        <div class="flex-grow-1">
+            <textarea class="form-control" rows="8" placeholder="Describe your question in detail..."></textarea>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-start gap-3">
+        <label class="pt-2" style="min-width: 60px;">Tags</label>
+        <div class="flex-grow-1">
+            <input type="text" class="form-control" placeholder="moon, park, puzzle">
+            <div class="form-text">Separate tags with commas</div>
+        </div>
+    </div>
+
+    <div class="ms-5 ps-4">
+        <button class="btn btn-secondary">ASK!</button>
+    </div>
+
+</div>
+
+{% endblock %}
