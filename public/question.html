@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskPupkin</title>
+    <link rel="icon" href="static/img/favicon.png">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-xxl">
+
+            <a class="navbar-brand fw-bold fs-1" href="index.html">AskPupkin</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="d-flex align-items-center w-100 gap-3">
+
+                    <!-- поиск -->
+                    <form class="d-flex flex-grow-1 search-form">
+                        <input class="form-control search-input"
+                               type="search"
+                               placeholder="Search">
+                    </form>
+
+                    <!-- кнопка -->
+                    <a href="ask.html" class="btn btn-success button fw-bold">ASK!</a>
+
+                    <!-- профиль справа -->
+                    <div class="d-flex align-items-center me-4">
+                        <img src="static/img/avatar.png" class="avatar" alt="avatar">
+                        <div class="ms-3">
+                            <div class="fw-semibold">Данил Колбасенко</div>
+                            <div>
+                                <a href="profile.html" class="me-2">settings</a>
+                                <a href="#">log out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main class="main-container mt-5">
+    <div class="container-xxl">
+        <div class="row">
+
+            <div class="col-12 col-lg-9">
+                <!-- блок вопроса -->
+                <div class="d-flex gap-3 mb-4">
+
+
+                    <div class="d-flex flex-column align-items-center gap-2">
+                        <img src="static/img/card-img.jpg" class="question-avatar" alt="avatar">
+                        <div class="d-flex align-items-center border rounded like-widget">
+                            <span class="fw-semibold px-3">5</span>
+                            <div class="vr"></div>
+                            <div class="d-flex flex-column flex-grow-1">
+                                <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                                <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2>How to build a moon park?</h2>
+                        <p class="text-muted">Lorem ipsum — dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                            suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-row gap-2">
+                                <span class="small">Tags:</span>
+                                <a href="#" class="small">black-jack</a>
+                                <a href="#" class="small">bender</a>
+                            </div>
+                            <div class="d-flex flex-row gap-2">
+                                <span class="small">Published:</span>
+                                <span class="text-muted small">2 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="d-flex flex-column gap-3 mb-4">
+
+                    <!-- ответ 1 -->
+                    <div class="card p-3 border-dark">
+                        <div class="d-flex gap-3">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="static/img/card-img.jpg" class="card-img" alt="avatar">
+                                <div class="d-flex align-items-center border rounded like-widget">
+                                    <span class="fw-semibold px-3">5</span>
+                                    <div class="vr"></div>
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                                        <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>First of all I would like to thank you for the invitation to participate
+                                    in such a … Russia is the huge territory which in many respects needs
+                                    to be render habitable.</p>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex align-items-center gap-2 text-success">
+                                        <input type="checkbox" checked>
+                                        <span class="fw-semibold">Correct!</span>
+                                    </div>
+                                    <div class="d-flex flex-row gap-2">
+                                        <span class="small">Published:</span>
+                                        <span class="text-muted small">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ответ 2 -->
+                    <div class="card p-3 border-dark">
+                        <div class="d-flex gap-3">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="static/img/card-img.jpg" class="card-img" alt="avatar">
+                                <div class="d-flex align-items-center border rounded like-widget">
+                                    <span class="fw-semibold px-3">3</span>
+                                    <div class="vr"></div>
+                                    <div class="d-flex flex-column flex-grow-1">
+                                        <button class="btn btn-sm py-1 border-bottom rounded-0 w-100">▲</button>
+                                        <button class="btn btn-sm py-1 rounded-0 w-100">▼</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>First of all I would like to thank you for the invitation to participate
+                                    in such a … Russia is the huge territory which in many respects needs
+                                    to be render habitable.</p>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="checkbox">
+                                        <span class="fw-semibold">Correct!</span>
+                                    </div>
+                                    <div class="d-flex flex-row gap-2">
+                                        <span class="small">Published:</span>
+                                        <span class="text-muted small">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- форма ответа -->
+                <div>
+                    <textarea class="form-control mb-3 border-dark"
+                              rows="4"
+                              placeholder="Enter your answer here.."></textarea>
+                    <button class="btn btn-secondary button mb-5">Answer</button>
+                </div>
+
+            </div>
+
+            <!-- sidebar -->
+            <div class="col-12 col-lg-3 justify-content-center">
+                <h5 class="fw-bold">Popular Tags</h5>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <a href="#" class="text-dark text-decoration-none">perl</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">python</a>
+                    <a href="#" class="text-dark text-decoration-none">TechnoPark</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">MySQL</a>
+                    <a href="#" class="text-success text-decoration-none">django</a>
+                    <a href="#" class="text-dark text-decoration-none">C++</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">C#</a>
+                    <a href="#" class="text-dark text-decoration-none">F#</a>
+                    <a href="#" class="text-danger fw-semibold text-decoration-none">NASM</a>
+                    <a href="#" class="text-success text-decoration-none">Rust</a>
+
+                </div>
+
+                <h5 class="fw-bold">Best Members</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a href="#" class="text-primary">Поздышев Александр</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Опритов Артём</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Виндман Александр</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Пивоварова Саша</a></li>
+                    <li class="mb-1"><a href="#" class="text-primary">Клименков Артём</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="border-top py-3 text-center text-muted small mt-auto">
+    2026 AskPupkin
+</footer>
+
+
+<script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
